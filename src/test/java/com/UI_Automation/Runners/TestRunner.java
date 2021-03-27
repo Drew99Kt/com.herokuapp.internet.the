@@ -17,7 +17,7 @@ import cucumber.api.junit.Cucumber;
 		glue = "com.UI_Autotmation.Step_Definition",
 		dryRun =  false,
 		monochrome = true,
-		tags = "@Test2" )
+		tags = "@SmokeTest" )
 	
 
 

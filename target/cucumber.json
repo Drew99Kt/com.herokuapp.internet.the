@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "line": 3,
+        "line": 4,
         "name": "",
         "description": "",
         "type": "background",
@@ -11,10 +11,10 @@
         "steps": [
           {
             "result": {
-              "duration": 75327100,
+              "duration": 50517800,
               "status": "passed"
             },
-            "line": 4,
+            "line": 5,
             "name": "User is at the login page",
             "match": {
               "location": "UI_AutomationValidLoginStep_Definition.user_is_at_the_login_page()"
@@ -27,7 +27,7 @@
         "before": [
           {
             "result": {
-              "duration": 6732326500,
+              "duration": 6676584600,
               "status": "passed"
             },
             "match": {
@@ -35,14 +35,96 @@
             }
           }
         ],
-        "line": 18,
-        "name": "verify invalid login",
+        "line": 7,
+        "name": "successful login and verify success message displays",
         "description": "",
-        "id": "verify-valid-login-(positive-test)-and-invalid-login-(negative-test).;verify-invalid-login;;2",
+        "id": "verify-valid-login-(positive-test)--invalid-login-(negative-test)--select-followed-rows;successful-login-and-verify-success-message-displays",
         "after": [
           {
             "result": {
-              "duration": 2787075500,
+              "duration": 2807418500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 751347100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enters valid username and password and click login",
+            "match": {
+              "location": "UI_AutomationValidLoginStep_Definition.user_enters_valid_username_and_password_and_click_login()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 52632400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User should be able to verify welcome text",
+            "match": {
+              "location": "UI_AutomationValidLoginStep_Definition.user_should_be_able_to_verify_welcome_text()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7127800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is at the login page",
+            "match": {
+              "location": "UI_AutomationValidLoginStep_Definition.user_is_at_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5048748300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "verify invalid login",
+        "description": "",
+        "id": "verify-valid-login-(positive-test)--invalid-login-(negative-test)--select-followed-rows;verify-invalid-login;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 2732037100,
               "status": "passed"
             },
             "match": {
@@ -55,10 +137,10 @@
         "steps": [
           {
             "result": {
-              "duration": 776125699,
+              "duration": 609037400,
               "status": "passed"
             },
-            "line": 12,
+            "line": 13,
             "name": "User enters \"King123\"  and \"queen!!\" and click login",
             "match": {
               "arguments": [
@@ -77,10 +159,10 @@
           },
           {
             "result": {
-              "duration": 76795900,
+              "duration": 60380200,
               "status": "passed"
             },
-            "line": 13,
+            "line": 14,
             "name": "User should be able to verify invalid text",
             "match": {
               "location": "UI_AutomationInvalidLoginStep_Definition.user_should_be_able_to_successfully_invalid_text()"
@@ -90,12 +172,12 @@
         ],
         "tags": [
           {
-            "name": "@Test2"
+            "name": "@SmokeTest"
           }
         ]
       },
       {
-        "line": 3,
+        "line": 4,
         "name": "",
         "description": "",
         "type": "background",
@@ -103,10 +185,10 @@
         "steps": [
           {
             "result": {
-              "duration": 7889400,
+              "duration": 7858800,
               "status": "passed"
             },
-            "line": 4,
+            "line": 5,
             "name": "User is at the login page",
             "match": {
               "location": "UI_AutomationValidLoginStep_Definition.user_is_at_the_login_page()"
@@ -119,99 +201,7 @@
         "before": [
           {
             "result": {
-              "duration": 7088766500,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 19,
-        "name": "verify invalid login",
-        "description": "",
-        "id": "verify-valid-login-(positive-test)-and-invalid-login-(negative-test).;verify-invalid-login;;3",
-        "after": [
-          {
-            "result": {
-              "duration": 3417106900,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.tearDown(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 692816100,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "User enters \"Lavender456\"  and \"\" and click login",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Lavender456\"",
-                  "offset": 12
-                },
-                {
-                  "val": "\"\"",
-                  "offset": 31
-                }
-              ],
-              "location": "UI_AutomationInvalidLoginStep_Definition.user_enters_and_and_click_login(String,String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 68063200,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "User should be able to verify invalid text",
-            "match": {
-              "location": "UI_AutomationInvalidLoginStep_Definition.user_should_be_able_to_successfully_invalid_text()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Test2"
-          }
-        ]
-      },
-      {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 8368900,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "User is at the login page",
-            "match": {
-              "location": "UI_AutomationValidLoginStep_Definition.user_is_at_the_login_page()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 5151779300,
+              "duration": 4845500500,
               "status": "passed"
             },
             "match": {
@@ -222,11 +212,11 @@
         "line": 20,
         "name": "verify invalid login",
         "description": "",
-        "id": "verify-valid-login-(positive-test)-and-invalid-login-(negative-test).;verify-invalid-login;;4",
+        "id": "verify-valid-login-(positive-test)--invalid-login-(negative-test)--select-followed-rows;verify-invalid-login;;3",
         "after": [
           {
             "result": {
-              "duration": 2765220400,
+              "duration": 3227863000,
               "status": "passed"
             },
             "match": {
@@ -239,20 +229,20 @@
         "steps": [
           {
             "result": {
-              "duration": 833872199,
+              "duration": 534322800,
               "status": "passed"
             },
-            "line": 12,
-            "name": "User enters \"\"  and \"blankusername\" and click login",
+            "line": 13,
+            "name": "User enters \"blankPassword\"  and \"\" and click login",
             "match": {
               "arguments": [
                 {
-                  "val": "\"\"",
+                  "val": "\"blankPassword\"",
                   "offset": 12
                 },
                 {
-                  "val": "\"blankusername\"",
-                  "offset": 20
+                  "val": "\"\"",
+                  "offset": 33
                 }
               ],
               "location": "UI_AutomationInvalidLoginStep_Definition.user_enters_and_and_click_login(String,String)"
@@ -261,10 +251,10 @@
           },
           {
             "result": {
-              "duration": 61695700,
+              "duration": 54005400,
               "status": "passed"
             },
-            "line": 13,
+            "line": 14,
             "name": "User should be able to verify invalid text",
             "match": {
               "location": "UI_AutomationInvalidLoginStep_Definition.user_should_be_able_to_successfully_invalid_text()"
@@ -274,14 +264,106 @@
         ],
         "tags": [
           {
-            "name": "@Test2"
+            "name": "@SmokeTest"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 8188700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is at the login page",
+            "match": {
+              "location": "UI_AutomationValidLoginStep_Definition.user_is_at_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5050817000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "verify invalid login",
+        "description": "",
+        "id": "verify-valid-login-(positive-test)--invalid-login-(negative-test)--select-followed-rows;verify-invalid-login;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 2770680800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 571756800,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User enters \"\"  and \"blankUsername\" and click login",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"blankUsername\"",
+                  "offset": 20
+                }
+              ],
+              "location": "UI_AutomationInvalidLoginStep_Definition.user_enters_and_and_click_login(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 55695400,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User should be able to verify invalid text",
+            "match": {
+              "location": "UI_AutomationInvalidLoginStep_Definition.user_should_be_able_to_successfully_invalid_text()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest"
           }
         ]
       }
     ],
-    "name": "Verify valid login (positive test) and invalid login (negative test).",
+    "name": "Verify valid login (positive test), invalid login (negative test), select followed rows",
     "description": "",
-    "id": "verify-valid-login-(positive-test)-and-invalid-login-(negative-test).",
+    "id": "verify-valid-login-(positive-test)--invalid-login-(negative-test)--select-followed-rows",
     "keyword": "Feature",
     "uri": "src/test/resources/UI_AutumationLogin.feature",
     "tags": []
