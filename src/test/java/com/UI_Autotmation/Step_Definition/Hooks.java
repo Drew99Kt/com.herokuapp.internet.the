@@ -17,7 +17,7 @@ public class Hooks {
 	@Before
 	public void setUp() throws InterruptedException  {
 		
-		Driver.getDriver().get(ConfigurationReader.getProperty("url"));
+		Driver.getDriver().get(ConfigurationReader.getProperty("urlOne"));
 		Driver.getDriver().manage().window().maximize();
 		Driver.getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		Thread.sleep(2000);
