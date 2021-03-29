@@ -3,7 +3,7 @@ package com.UI_Automation.Utilities;
 import java.io.FileInputStream;
 import java.util.Properties;
 
-public class ConfigurationReader {
+public class ConfigsReader {
 	private static Properties configFile;
 	static {
 		try {
