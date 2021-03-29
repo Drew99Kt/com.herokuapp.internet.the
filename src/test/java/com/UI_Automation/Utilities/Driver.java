@@ -13,7 +13,7 @@ public class Driver {
 	public static WebDriver driver;
 	public static WebDriver getDriver() {
 		if (driver == null) {
-			switch (ConfigurationReader.getProperty("browser")) {
+			switch (ConfigsReader.getProperty("browser")) {
 			case "firefox":
 				WebDriverManager.firefoxdriver().setup();
 				driver = new FirefoxDriver();

@@ -1,6 +1,9 @@
 package com.UI_Automation.Runners;
 
+
+
 import org.junit.runner.RunWith;
+import org.testng.annotations.Test;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
@@ -17,7 +20,7 @@ import cucumber.api.junit.Cucumber;
 		glue = "com.UI_Autotmation.Step_Definition",
 		dryRun =  false,
 		monochrome = true,
-		tags = "@SmokeTest" )
+		tags = "@Test" )
 	
 
 

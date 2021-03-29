@@ -3,6 +3,7 @@ package com.UI_Autotmation.Step_Definition;
 import org.junit.Assert;
 
 import com.UI_Automation.Pages.RowPageElement;
+import com.UI_Automation.Utilities.ConfigsReader;
 import com.UI_Automation.Utilities.Driver;
 
 import cucumber.api.java.en.Given;
@@ -13,8 +14,10 @@ public class UI_AutomationSelectRows {
 	
 	RowPageElement rowEle = new RowPageElement ();
 	
+	
 	@Given("User verifies a homepage")
 	public void user_verifies_a_homepage() {
+		Driver.getDriver().get(ConfigsReader.getProperty("urlTwo"));;
 		 String expectedTitle = Driver.getDriver().getTitle();
 		 System.out.println(expectedTitle);
 		 String actualTitle = "The Internet";
