@@ -1,0 +1,535 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4977336700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "successful select rows",
+        "description": "",
+        "id": "verify-elements-esist;successful-select-rows",
+        "after": [
+          {
+            "result": {
+              "duration": 2591056300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 405562400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User verifies a homepage",
+            "match": {
+              "location": "UI_AutomationSelectRows.user_verifies_a_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 72727600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User selects \"Siblings\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Siblings\"",
+                  "offset": 13
+                }
+              ],
+              "location": "UI_AutomationSelectRows.user_selects(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 48154900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User selects \"1.3\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1.3\"",
+                  "offset": 13
+                }
+              ],
+              "location": "UI_AutomationSelectRows.user_selects(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 47646900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User selects \"13.2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"13.2\"",
+                  "offset": 13
+                }
+              ],
+              "location": "UI_AutomationSelectRows.user_selects(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 47489200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User should be able to verify all rows",
+            "match": {
+              "location": "UI_AutomationSelectRows.user_should_be_able_to_verify_all_rows()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Test"
+          }
+        ]
+      }
+    ],
+    "name": "verify elements esist",
+    "description": "",
+    "id": "verify-elements-esist",
+    "keyword": "Feature",
+    "uri": "src/test/resources/UI_AutomationSelect.feature",
+    "tags": [
+      {
+        "name": "@Test",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 9912000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is at the login page",
+            "match": {
+              "location": "UI_AutomationValidLoginStep_Definition.user_is_at_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4136417900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "successful login and verify success message displays",
+        "description": "",
+        "id": "verify-valid-login-(positive-test)--invalid-login-(negative-test);successful-login-and-verify-success-message-displays",
+        "after": [
+          {
+            "result": {
+              "duration": 3083146900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 365061500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User enters valid username and password and click login",
+            "match": {
+              "location": "UI_AutomationValidLoginStep_Definition.user_enters_valid_username_and_password_and_click_login()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 23362000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User should be able to verify welcome text",
+            "match": {
+              "location": "UI_AutomationValidLoginStep_Definition.user_should_be_able_to_verify_welcome_text()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Test"
+          }
+        ]
+      }
+    ],
+    "name": "Verify valid login (positive test), invalid login (negative test)",
+    "description": "",
+    "id": "verify-valid-login-(positive-test)--invalid-login-(negative-test)",
+    "keyword": "Feature",
+    "uri": "src/test/resources/UI_AutomationValidLogin.feature",
+    "tags": [
+      {
+        "name": "@Test",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6589800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is at the login page",
+            "match": {
+              "location": "UI_AutomationValidLoginStep_Definition.user_is_at_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4167137000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "verify invalid login",
+        "description": "",
+        "id": "verify-valid-login-(positive-test)--invalid-login-(negative-test);verify-invalid-login;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 2595336600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 472343500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User enters \"King123\"  and \"queen!!\" and click login",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"King123\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"queen!!\"",
+                  "offset": 27
+                }
+              ],
+              "location": "UI_AutomationInvalidLoginStep_Definition.user_enters_and_and_click_login(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 25977300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User should be able to verify invalid text",
+            "match": {
+              "location": "UI_AutomationInvalidLoginStep_Definition.user_should_be_able_to_successfully_invalid_text()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Test"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7000700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is at the login page",
+            "match": {
+              "location": "UI_AutomationValidLoginStep_Definition.user_is_at_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4195213100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "verify invalid login",
+        "description": "",
+        "id": "verify-valid-login-(positive-test)--invalid-login-(negative-test);verify-invalid-login;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 2593258600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 358042900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User enters \"blankPassword\"  and \"\" and click login",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"blankPassword\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 33
+                }
+              ],
+              "location": "UI_AutomationInvalidLoginStep_Definition.user_enters_and_and_click_login(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 23077900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User should be able to verify invalid text",
+            "match": {
+              "location": "UI_AutomationInvalidLoginStep_Definition.user_should_be_able_to_successfully_invalid_text()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Test"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6020300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is at the login page",
+            "match": {
+              "location": "UI_AutomationValidLoginStep_Definition.user_is_at_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4244442600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "verify invalid login",
+        "description": "",
+        "id": "verify-valid-login-(positive-test)--invalid-login-(negative-test);verify-invalid-login;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 2600768000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 351290500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User enters \"\"  and \"blankUsername\" and click login",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"blankUsername\"",
+                  "offset": 20
+                }
+              ],
+              "location": "UI_AutomationInvalidLoginStep_Definition.user_enters_and_and_click_login(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 26630100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User should be able to verify invalid text",
+            "match": {
+              "location": "UI_AutomationInvalidLoginStep_Definition.user_should_be_able_to_successfully_invalid_text()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Test"
+          }
+        ]
+      }
+    ],
+    "name": "Verify valid login (positive test), invalid login (negative test)",
+    "description": "",
+    "id": "verify-valid-login-(positive-test)--invalid-login-(negative-test)",
+    "keyword": "Feature",
+    "uri": "src/test/resources/UI_AutumationInValidLogin.feature",
+    "tags": [
+      {
+        "name": "@Test",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
